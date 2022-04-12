@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação com Usuário</title>
+    <script type="text/JavaScript">
+        function olaUsuario() {
+            var nomeUsuario = prompt("Qual o seu nome", "Digite aqui");
+            if (nomeUsuario) {
+                alert('Uma flor pra você, ' +nomeUsuario);
+                document.getElementByid("idImgEscreva").scr = "escreva.jpg"
+                
+            }
+        }
+        
+    </script>
+</head>
+
+<body onload="alert('Olá Usuário, clique na imagem para fazer a interação!')">
+    <div style="margin-top: 100px; text-align: center;">
+        <img id="idImgEscreva" src="img/escreva1.jpg" alt="escreva"
+        onClick = "olaUsuario()" style= "cursor: point">
+
+    </div>
+    
+</body>
+</html>
